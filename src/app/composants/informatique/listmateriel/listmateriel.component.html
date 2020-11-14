@@ -1,0 +1,13 @@
+<h1>Nos produits en informatique</h1>
+<ul>
+    <ng-container *ngFor="let t of materiels">
+        <li *ngIf="t.quantite>0">
+           <img [src]="t.photo" alt="matériels" height="100px" width="100px">
+           {{t.libelle}} 
+           <span [ngClass]="{'badge badge-pill badge-primary':t.hautGamme==true,'badge badge-dark':t.hautGamme==false}">
+               Prix:{{t.prix}}DT<i [ngClass]="{'fa fa-thumbs-up':t.hautGamme==true}"></i>
+           </span>
+        </li>
+
+    </ng-container>
+</ul>
