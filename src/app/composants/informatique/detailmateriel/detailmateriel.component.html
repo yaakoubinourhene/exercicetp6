@@ -1,10 +1,16 @@
-<h1>Détail du "PC"d'Id:2</h1>
-<ul>
-    <li><img [src]="materiel.photo" alt="image pc" withd="100px" height="100px"></li>
-    <li> marque{{materiel.marque}}</li>
-    <li>Prix {{materiel.prix}}</li>
-    <li>description {{materiel.description}}</li>
-    <li>quantite {{materiel.quantite}}</li>
-    <li>haute gamme <input type="checkbox" [checked]="materiel.hautGamme"></li>
-    <li><button type="button" class="btn btn-primary">Afficher le commentaire</button></li>
-</ul>
+<h2>detail du "{{materiel.libelle}}" d'ID:{{materiel.id}} </h2>
+<div class="conatiner">
+    <div class="row">
+        <div class="col-6">
+            <ul class="« list-group">
+                <li class="list-group-item"><img [src]="materiel.photo" alt="image pc" withd="100px" height="100px"></li>
+                <li class="list-group-item"> marque{{materiel.marque}}</li>
+                <li class="list-group-item">Prix {{materiel.prix}}</li>
+                <li class="list-group-item">description {{materiel.description}}</li>
+                <li class="list-group-item">quantite {{materiel.quantite}}</li>
+                <li class="list-group-item">haute gamme <input type="checkbox" [checked]="materiel.hautGamme"></li>
+                <li class="list-group-item"><button type="button" class="btn btn-primary">Afficher le commentaire</button></li>
+            </ul>
+    </div>
+</div>
+</div>
