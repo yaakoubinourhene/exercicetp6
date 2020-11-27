@@ -6,13 +6,18 @@ import { AppComponent } from './app.component';
 import { AccueilComponent } from './composants/accueil/accueil.component';
 import { NomPipe } from './nom.pipe';
 import { ListmaterielComponent } from './composants/informatique/listmateriel/listmateriel.component';
+import { MaterielComponent } from './composants/informatique/materiel/materiel.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AccueilComponent,
     NomPipe,
-    ListmaterielComponent
+    ListmaterielComponent,
+    MaterielComponent,
+
   ],
   imports: [
     BrowserModule,
