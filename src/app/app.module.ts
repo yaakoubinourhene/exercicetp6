@@ -7,6 +7,7 @@ import { AccueilComponent } from './composants/accueil/accueil.component';
 import { NomPipe } from './nom.pipe';
 import { ListmaterielComponent } from './composants/informatique/listmateriel/listmateriel.component';
 import { MaterielComponent } from './composants/informatique/materiel/materiel.component';
+import { DetailmaterielComponent } from './composants/informatique/detailmateriel/detailmateriel.component';
 
 
 
@@ -17,6 +18,7 @@ import { MaterielComponent } from './composants/informatique/materiel/materiel.c
     NomPipe,
     ListmaterielComponent,
     MaterielComponent,
+    DetailmaterielComponent,
 
   ],
   imports: [
