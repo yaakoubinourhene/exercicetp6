@@ -1,6 +1,8 @@
-<h1>listes des commentaire</h1>
-
-
-commentaire n:1 {{com.contenu}}<br/>
-{{com.auteur}}<span class="badge badge-primary badge-pill">{{com.note}}</span><br/>
-{{com.date | date}}
+<ul class="list-unstyled">
+    <li>commentaire n° {{indice}} : {{comm.contenu}}</li>
+    <li>
+        {{comm.auteur}}
+        <span class="badge badge-primary">{{comm.note}}</span>
+    </li>
+    <li>{{comm.date | date:'dd/mm/yyyy'}}</li>
+</ul>
