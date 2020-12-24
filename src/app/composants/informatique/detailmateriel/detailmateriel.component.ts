@@ -9,7 +9,7 @@ import { MaterielService } from 'src/app/services/materiel.service';
 })
 export class DetailmaterielComponent implements OnInit {
   afficher:boolean =false;
-  materiels:Materiel[];
+  materiel:Materiel;
   
   
    
@@ -19,6 +19,7 @@ onClick(){
   constructor(private matereielService:MaterielService) { }
 
   ngOnInit(): void {
+    this.materiel=this.matereielService.getMaterielById("2");
     
   }
   

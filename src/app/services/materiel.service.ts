@@ -68,9 +68,9 @@ export class MaterielService {
 getmateriels(){
   return this.materiels;
   };
-   getMaterielById <Materiel>(id:string){
+   getMaterielById(id:string):Materiel{
 
-    return this.materiels.find(element => element.id==id);
+    return <Materiel> this.materiels.find(element => element.id==id);
   }
  
   constructor() { }
