@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Materiel } from 'src/app/models/materiel';
 
 @Component({
@@ -7,10 +8,12 @@ import { Materiel } from 'src/app/models/materiel';
   styleUrls: ['./materiel.component.css']
 })
 export class MaterielComponent implements OnInit {
+  
 @Input() mat:Materiel;
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
